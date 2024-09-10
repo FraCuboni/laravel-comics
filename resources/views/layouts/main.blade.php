@@ -14,11 +14,12 @@
 
     @include('partials.navbar')
 
-    @yield('hero')
+    @yield('home_main')
 
     @yield('content')
 
     @include('partials.footer')
+    @include('partials.footerb')
 
 </body>
 </html>

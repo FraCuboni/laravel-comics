@@ -45,7 +45,7 @@ li {
 .container.footer-top {
     padding: $section_padding;
     color: white;
-    background-image: url(../assets/footer-bg.jpg);
+    background-image: url(../img/footer-bg.jpg);
     background-size: cover;
 
     display: flex;
@@ -120,5 +120,73 @@ li {
 
             }
         }
+    }
+}
+
+// home-info
+.container.home-info {
+    background-color: $brand_primary;
+    padding: $section_padding;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            div {
+                width: 60px;
+                aspect-ratio: 1/1;
+                padding-right: 5px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-height: 100%;
+                }
+            }
+
+            p {
+                color: white;
+            }
+        }
+    }
+}
+
+//home-main 
+.container.home-content {
+    background-color: black;
+    padding: $section_padding;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h1 {
+        color: white;
+    }
+}
+
+// card section
+.card {
+    width: calc(100% / 6 - 10px);
+    margin-bottom: 15px;
+
+    .img-container {
+        width: 100%;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+    }
+
+    p {
+        color: white;
+        padding: 10px 0;
+        word-wrap: break-word;
+        font-size: 25px;
+        font-weight: 300;
+        text-transform: uppercase;
     }
 }

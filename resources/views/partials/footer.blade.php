@@ -58,7 +58,7 @@
 
     <div class="box-2">
         <div>
-            <img src="" alt="">
+            <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
         </div>
     </div>
 
