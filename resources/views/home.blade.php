@@ -4,109 +4,45 @@
 @section('home_main')
 
     <div class="container home-content">
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
+        @foreach ($data as $item)
+            <div class="card">
+                <div class="img-container">
+                    <img src="{{$item['thumb']}}" alt="">
+                </div>
+                <p>{{$item['series']}}</p>
             </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
-        <div class="card">
-            <div class="img-container">
-                <img :src="details.thumb" alt="">
-            </div>
-            <p>detail series</p>
-        </div>
+        @endforeach
     </div>
 
     <div class="container home-info">
         <ul>
             <li>
                 <div>
-                    <img src="" alt="">
+                    <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
                 </div>
                 <p>element text</p>
             </li>
             <li>
                 <div>
-                    <div>immagine</div>
+                    <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
                 </div>
                 <p>element text</p>
             </li>
             <li>
                 <div>
-                    <div>immagine</div>
+                    <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
                 </div>
                 <p>element text</p>
             </li>
             <li>
                 <div>
-                    <div>immagine</div>
+                    <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
                 </div>
                 <p>element text</p>
             </li>
             <li>
                 <div>
-                    <div>immagine</div>
+                    <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
                 </div>
                 <p>element text</p>
             </li>
